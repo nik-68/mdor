@@ -15,7 +15,23 @@ import socket
 import threading
 import time
 import sys
-	
+import re
+import urllib.request
+
+from termcolor import colored
+import time
+import os
+
+print("head...")
+users = [
+    "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.3) Gecko/20090913 Firefox/3.5.3"
+    "Mozilla / 5.0 (Macintosh; Intel Mac OS X 10.14; rv: 75.0) Gecko / 20100101 Firefox / 75.0"
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+]
+headers = {
+    'User-Agent' : random.choice(users)
+}
+
 class bcolors:
  RED = '\033[91m'
  GREEN = '\033[92m'
@@ -778,7 +794,7 @@ class attacco(threading.Thread):
 			except:
 				proxy = random.choice(listaproxy).split(':')
  
- os.system("clear")
+
 print("З А Г Р У З К А....")
 time.sleep(1.5)
 os.system("clear")
