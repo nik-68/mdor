@@ -32,7 +32,7 @@ headers = {
     'User-Agent' : random.choice(users)
 }
 
-class bcolors:
+class colored:
  RED = '\033[91m'
  GREEN = '\033[92m'
  BLUE = '\033[94m'
@@ -818,7 +818,7 @@ x = 0
 for x in xrange(thread):
 	attacco().start()
 
-print bcolors.RED + "Attack Started..."
+print(colored("Attack Started...",'red'))
 nload = 0
 while not nload:
 	time.sleep(1)
