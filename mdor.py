@@ -783,11 +783,6 @@ print("З А Г Р У З К А....")
 time.sleep(1.5)
 os.system("clear")
 
-print bcolors.CYAN + \
-"""                                                       
-X X X
-"""
-
 url = sys.argv[1]
 host_url = url.replace("http://", "").replace("https://", "").split('/')[0]
  
