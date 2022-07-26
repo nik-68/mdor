@@ -1,5 +1,15 @@
 #coding: utf8 
+import os, sys
 
+try:
+    import socks
+except:
+    if sys.platform.startswith("linux"):
+        os.system("pip3 install pysocks")
+    elif sys.platform.startswith("freebsd"):
+        os.system("pip3 install pysocks")
+    else:
+        os.system("pip install pysocks")
 import random
 import socket
 import threading
