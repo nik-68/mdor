@@ -798,8 +798,35 @@ class attacco(threading.Thread):
 print("З А Г Р У З К А....")
 time.sleep(1.5)
 
-url = sys.argv[1]
-host_url = url.replace("http://", "").replace("https://", "").split('/')[0]
+url = input("\nInsert URL/IP: ").strip()
+
+		if url == "":
+			print ("Please enter the url.")
+			starturl()
+
+		try:
+			if url[0]+url[1]+url[2]+url[3] == "www.":
+				url = "http://" + url
+			elif url[0]+url[1]+url[2]+url[3] == "http":
+				pass
+			else:
+				url = "http://" + url
+		except:
+			print("You mistyped, try again.")
+			starturl()
+
+		try:
+			host_url = url.replace("http://", "").replace("https://", "").split("/")[0].split(":")[0]
+		except:
+			host_url = url.replace("http://", "").replace("https://", "").split("/")[0]
+
+		try:
+			urlport = url.replace("http://", "").replace("https://", "").split("/")[0].split(":")[1]
+		except:
+			urlport = "80"
+
+	proxymode()
+
  
 
 in_file = open("proxys.txt","r")
