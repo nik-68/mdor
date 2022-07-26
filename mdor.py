@@ -727,11 +727,6 @@ reFerers = [
  "http://downforeveryoneorjustme.com/",
  "https://www.facebook.com/l.php?u=",]
 
-os.system("clear")
-print("З А Г Р У З К А....")
-time.sleep(1.5)
-os.system("clear")
-
 def randomIp():
 	random.seed()
 	result = str(random.randint(1, 254)) + '.' + str(random.randint(1, 254)) + '.'
@@ -783,7 +778,10 @@ class attacco(threading.Thread):
 			except:
 				proxy = random.choice(listaproxy).split(':')
  
- 
+ os.system("clear")
+print("З А Г Р У З К А....")
+time.sleep(1.5)
+os.system("clear")
 
 print bcolors.CYAN + \
 """                                                       
