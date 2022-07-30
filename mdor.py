@@ -6,9 +6,18 @@ import random
 import os
 import sys
 import time
-
+import urllib.request
+# Colors
+yellow='\033[92m'
+cyan='\033[92m'
+pink='\033[92m'
+green = '\033[92m'
+red ='\033[92m'
+white ='\033[92m'
+black ='\033[92m'
+# Requests
 os.system("clear")
-print("З А Г Р У З К А....")
+print(green + f"З А Г Р У З К А....")
 time.sleep(1.5)
 os.system("clear")
 
@@ -40,3 +49,4 @@ while True:
 
 if __name__ == '__main__':
 	starturl() # questo fa startare la prima funzione del programma, che a sua volta ne starta un altra, poi un altra, fino ad arrivare all'attacco. 
+KeyboardInterrupt
