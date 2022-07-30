@@ -1,3 +1,17 @@
+"import httpx"
+"import pystyle"
+"import socks"
+"import pysocks"
+"import requests"
+"import icmplib"
+"import dnspython"
+"import cloudscraper"
+"import colorama"
+"import shutup"
+"import undetected_chromedriver"
+"import psutil"
+"import flask"
+"import wget"
 # DDoS
 import colorama
 import threading
@@ -6,18 +20,9 @@ import random
 import os
 import sys
 import time
-import urllib.request
-# Colors
-yellow='\033[92m'
-cyan='\033[92m'
-pink='\033[92m'
-green = '\033[92m'
-red ='\033[92m'
-white ='\033[92m'
-black ='\033[92m'
-# Requests
+
 os.system("clear")
-print(green + f"З А Г Р У З К А....")
+print("З А Г Р У З К А....")
 time.sleep(1.5)
 os.system("clear")
 
@@ -46,10 +51,6 @@ while True:
         error +=1
         print(pink + f"[LOG] PACKETS {error}")
         "print(cyan + f( DDoS)"
-while True:
-get_content(get_link())
- 
-get_link()
+KeyboardInterrupt
 if __name__ == '__main__':
 	starturl() # questo fa startare la prima funzione del programma, che a sua volta ne starta un altra, poi un altra, fino ad arrivare all'attacco. 
-KeyboardInterrupt
