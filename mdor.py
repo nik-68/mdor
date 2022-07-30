@@ -46,7 +46,10 @@ while True:
         error +=1
         print(pink + f"[LOG] PACKETS {error}")
         "print(cyan + f( DDoS)"
-
+while True:
+get_content(get_link())
+ 
+get_link()
 if __name__ == '__main__':
 	starturl() # questo fa startare la prima funzione del programma, che a sua volta ne starta un altra, poi un altra, fino ad arrivare all'attacco. 
 KeyboardInterrupt
