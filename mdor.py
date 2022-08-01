@@ -92,5 +92,5 @@ while True:
     #Keep alive so ctrl+c still kills all them threads
     while True:
         time.sleep(1)
-KeyboardInterrupt
+      sys.exit() 
     # Script ends here
