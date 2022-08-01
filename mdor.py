@@ -8,7 +8,7 @@
 "import cloudscraper"
 "import colorama"
 "import shutup"
-"import undetected_chromedriver"
+"import undetected_chromedriver"4
 "import psutil"
 "import flask"
 "import wget"
@@ -61,6 +61,3 @@ while True:
         error +=1
         print(pink + f"[LOG] PACKETS {error}")
         "print(cyan + f( DDoS)"
-KeyboardInterrupt
-if __name__ == '__main__':
-	starturl() # questo fa startare la prima funzione del programma, che a sua volta ne starta un altra, poi un altra, fino ad arrivare all'attacco. 
