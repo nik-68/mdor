@@ -76,7 +76,7 @@ while True:
         error +=1
         print(pink + f"[LOG] PACKETS {error}")
         "print(cyan + f( DDoS)"
-        print("CTRL+C to stop attack")
+        print("CTRL+Z to stop attack")
 
 #Thread spawner
     for n in range(numberthreads):
