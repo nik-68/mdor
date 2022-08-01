@@ -88,6 +88,6 @@ while True:
         thread.start()
         threads.append(thread)
     # Your code
-    except KeyboardInterrupt:
+except KeyboardInterrupt:
     # User interrupt the program with ctrl+c
     exit()
