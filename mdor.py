@@ -81,14 +81,5 @@ while True:
         "print(cyan + f( DDoS)"
         print("CTRL+C to stop attack")
     except KeyboardInterrupt:
-
-    #Thread spawner
-while True:
-    try:
-    for n in range(numberthreads):
-        thread = threading.Thread(target=deny)
-        thread.daemon = True
-        thread.start()
-        threads.append(thread)
-    # User interrupt the program with ctrl+c
+   # User ctrl+c
     exit()
