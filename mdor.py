@@ -87,8 +87,7 @@ while True:
         thread.daemon = True
         thread.start()
         threads.append(thread)
-
-  try:
+       
     # Your code
     command = input('Type your command: ')
 
