@@ -81,5 +81,3 @@ while True:
         "print(cyan + f( DDoS)"
         print("CTRL+C to stop attack")
     except KeyboardInterrupt:
-   # User ctrl+c
-    exit()
