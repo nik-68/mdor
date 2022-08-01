@@ -8,7 +8,7 @@
 "import cloudscraper"
 "import colorama"
 "import shutup"
-"import undetected_chromedriver"4
+"import undetected_chromedriver"
 "import psutil"
 "import flask"
 "import wget"
