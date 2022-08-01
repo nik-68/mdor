@@ -88,6 +88,5 @@ while True:
         thread.daemon = True
         thread.start()
         threads.append(thread)
-  except KeyboardInterrupt:
     # User interrupt the program with ctrl+c
     exit()
