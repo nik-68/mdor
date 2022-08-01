@@ -12,6 +12,7 @@
 "import psutil"
 "import flask"
 "import wget"
+from sys import exit
 # DDoS
 import colorama
 import threading
@@ -87,10 +88,10 @@ while True:
         thread.start()
         threads.append(thread)
 
-    #In progress!
-    print("Sending...")
-    #Keep alive so ctrl+c still kills all them threads
-    while True:
-        time.sleep(1)
-      sys.exit() 
-    # Script ends here
+  try:
+    # Your code
+    command = input('Type your command: ')
+
+  except KeyboardInterrupt:
+    # User interrupt the program with ctrl+c
+    exit()
