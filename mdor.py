@@ -83,6 +83,8 @@ while True:
     except KeyboardInterrupt:
 
     #Thread spawner
+while True:
+    try:
     for n in range(numberthreads):
         thread = threading.Thread(target=deny)
         thread.daemon = True
