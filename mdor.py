@@ -93,5 +93,5 @@ while True:
     while True:
         time.sleep(1)
 KeyboardInterrupt
-    print("Script Stopped [ctrl + c]... Shutting down")
+    print("Script Stopped [ctrl + c]")
     # Script ends here
