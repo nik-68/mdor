@@ -92,6 +92,6 @@ while True:
     #Keep alive so ctrl+c still kills all them threads
     while True:
         time.sleep(1)
-except KeyboardInterrupt:
+KeyboardInterrupt:
     print("Script Stopped [ctrl + c]... Shutting down")
     # Script ends here
