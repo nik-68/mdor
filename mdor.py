@@ -87,10 +87,7 @@ while True:
         thread.daemon = True
         thread.start()
         threads.append(thread)
-       
     # Your code
-    command = input('Type your command: ')
-
-  except KeyboardInterrupt:
+    except KeyboardInterrupt:
     # User interrupt the program with ctrl+c
     exit()
